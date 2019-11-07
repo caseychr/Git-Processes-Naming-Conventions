@@ -30,7 +30,8 @@ If you have to squash before rebasing running `git rebase -i [upstream]` will le
 
 ## Merge Request Naming Conventions and Styling
 For efficient code review please abide by the following merge request convention.
-```(title)
+```
+(title)
 [JIRA ticket number]: [JIRA ticket title]
 
 (body)
@@ -45,12 +46,14 @@ For efficient code review please abide by the following merge request convention
     - [ ] Create or update unit tests
     - [ ] Test on multiple devices
 * Dependencies
-    - [ ] Ensure other teams (iOS, Tools, DI Labs, BMA) are in sync```  
+    - [ ] Ensure other teams (iOS, Tools, DI Labs, BMA) are in sync  
+```  
     
 Here is an example:
 
 
-```(title)
+```
+(title)
 AND-14795: Welcome screen shell for mobile cash
 
 (body)
@@ -66,4 +69,5 @@ Note: this feature is guarded by a build time flag `mcw_enabled` and will be dis
     - [ ] Create or update unit tests
     - [x] Test on multiple devices
 * Dependencies
-    - [x] Ensure other teams (iOS, Tools, DI Labs, BMA) are in sync```
+    - [x] Ensure other teams (iOS, Tools, DI Labs, BMA) are in sync  
+```
