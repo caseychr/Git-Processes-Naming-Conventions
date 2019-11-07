@@ -29,9 +29,28 @@ In this case you would replace `pick` with `squash` only for the commits you wis
 If you have to squash before rebasing running `git rebase -i [upstream]` will let you squash using the VI and then rebase you branch on the upstream. Just one less command you have to run.
 
 ## Merge Request Naming Conventions and Styling
+For efficient code review please abide by the following merge request convention.
+```(title)
+[JIRA ticket number]: [JIRA ticket title]
 
-```
-(title)
+(body)
+[explain what your changes are and what they do in relevance to the ticket. Also include any other information you feel is relevant for the reviewer]
+
+[Inlclude the below template with the relevant items checked]
+# Does this MR meet the acceptance criteria?
+- [ ] Follow [Contribution Guidelines](CONTRIBUTING.md)
+- [ ] Add [CHANGELOG.md](CHANGELOG.md) entry (if appropriate)
+- [ ] Create or update documentation
+* Testing
+    - [ ] Create or update unit tests
+    - [ ] Test on multiple devices
+* Dependencies
+    - [ ] Ensure other teams (iOS, Tools, DI Labs, BMA) are in sync```  
+    
+Here is an example:
+
+
+```(title)
 AND-14795: Welcome screen shell for mobile cash
 
 (body)
