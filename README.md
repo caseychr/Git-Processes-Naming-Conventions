@@ -26,7 +26,7 @@ Sometimes it makes sense to for a merge request to contain more than one squashe
 In this case you would replace `pick` with `squash` only for the commits you wish to squash into the 2 others. Commits are squashed from the latest into next previous commit that is labeled with `pick`. So if a branch has 4 commits and only the latest commit is squashed, it'll be squashed into the 3rd commit.
 
 ### Rebasing squashed commits with current branch
-If you have to squash before rebasing running `git rebase -i [upstream]` will let you squash using the VI and then rebase you branch on the upstream. Just one less command you have to run.
+
 
 ## Merge Request Naming Conventions and Styling
 For efficient code review please abide by the following merge request convention.
