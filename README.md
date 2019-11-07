@@ -2,15 +2,15 @@
 
 ## Purpose
 
-### Rebasing
+## Rebasing
 
-### Squashing
+## Squashing
 
-#### Squashing into 1 commit
+### Squashing into 1 commit
 
-#### Squashing into several commits
+### Squashing into several commits
 
-#### Rebasing squashed commits with current branch
+### Rebasing squashed commits with current branch
 
-### Merge Request Naming Conventions and Styling
+## Merge Request Naming Conventions and Styling
 
