@@ -18,10 +18,15 @@ Good coding practice is to push commits early and often but this can be tedious 
 ### Squashing into 1 commit
 On the branch you wish to squash run `git rebase -i` which will open up VI for your to squash your commits. Hit `i` to edit the VI and replace `pick` with `squash` for all the commits below the top most commit; leave the top commit as `pick`. Hit `esc` and then `:wq` to save the edits to the VI. (If you wish to leave the VI without saving any of your edits hit `esc` and `:q` to cancel)
 
+https://github.com/wprig/wprig/wiki/How-to-squash-commits
+
 ### Squashing into several commits
-Sometimes it makes sense to for a merge request to contain more than one squashed commit in it
+Sometimes it makes sense to for a merge request to contain more than one squashed commit in it. In mobile, for instance, if a branch has changes to UI and changes to RESTful calls it might make sense to squash UI changes together and backend call changes together.
+
+In this case you would replace `pick` with `squash` only for the commits you wish to squash into the 2 others. Commits are squashed from the latest into next previous commit that is labeled with `pick`. So if a branch has 4 commits and only the latest commit is squashed, it'll be squashed into the 3rd commit.
 
 ### Rebasing squashed commits with current branch
+If you have to squash before rebasing running `git rebase -i [upstream]` will let you squash using the VI and then rebase you branch on the upstream. Just one less command you have to run.
 
 ## Merge Request Naming Conventions and Styling
 
