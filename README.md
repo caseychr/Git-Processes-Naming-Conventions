@@ -1,6 +1,7 @@
-# Git-Processes-Naming-Conventions
+# GitLab Processes & MR Naming
 
 ## Purpose
+
 
 ## Rebasing
 
