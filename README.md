@@ -4,9 +4,9 @@
 To quickly understand Digital Insight's Merge Request processes for more efficient and readable reviews. The priority here is clean and concise commit history for merge requests as well as traceability in JIRA.
 
 ## Rebasing 
-```git rebase``` takes the commits of the current branch and appends them to another branch.
-```git rebase [upstream] [current branch]```
-Note: if you are on the current branch you wish to rebase running ```git rebase [upstream]``` is sufficient
+`git rebase` takes the commits of the current branch and appends them to another branch.
+`git rebase [upstream] [current branch]`
+Note: if you are on the current branch you wish to rebase running `git rebase [upstream]` is sufficient
 
 Rebasing gives us the advantage of stream lining the commit history.
 
@@ -16,9 +16,10 @@ https://medium.com/@gabriellamedas/git-rebase-and-git-rebase-onto-a6a3f83f9cce
 Good coding practice is to push commits early and often but this can be tedious for anyone reviewing the code. Therefore commits need to be squashed well-defined, well-labeled commits. This makes it more readable for the reviewer.
 
 ### Squashing into 1 commit
-On the branch you wish to squash run ```git rebase -i``` which will open up VI for your to squash your commits. Hit `i` to edit the VI and replace `pick` with `squash` for all the commits below the top most commit; leave the top commit as `pick`. Hit `esc` and then `:wq` to save the edits to the VI. (If you wish to leave the VI without saving any of your edits hit `esc` and `:q` to cancel)
+On the branch you wish to squash run `git rebase -i` which will open up VI for your to squash your commits. Hit `i` to edit the VI and replace `pick` with `squash` for all the commits below the top most commit; leave the top commit as `pick`. Hit `esc` and then `:wq` to save the edits to the VI. (If you wish to leave the VI without saving any of your edits hit `esc` and `:q` to cancel)
 
 ### Squashing into several commits
+Sometimes it makes sense to for a merge request to contain more than one squashed commit in it
 
 ### Rebasing squashed commits with current branch
 
