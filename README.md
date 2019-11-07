@@ -26,7 +26,7 @@ Sometimes it makes sense to for a merge request to contain more than one squashe
 In this case you would replace `pick` with `squash` only for the commits you wish to squash into the 2 others. Commits are squashed from the latest into next previous commit that is labeled with `pick`. So if a branch has 4 commits and only the latest commit is squashed, it'll be squashed into the 3rd commit.
 
 ### Rebasing squashed commits with current branch
-
+You are able to rebase and receive updated history off of other branches before they are merged. For example, if we have the main `master` branch, `branch A` which is derived from `master` and `branch B` which is derived from `branch A`. Let's say commits are made on `branch A` and then sqaushed into a commit while other work is in progress on `branch B`. If you rebase `branch B` with `branch A` that squashed commit will be updated in `branch B`'s commit history. (Before `branch A` is merged. Still investigating for after `branch A` is merged with `master`)
 
 ## Merge Request Naming Conventions and Styling
 For efficient code review please abide by the following merge request convention.
