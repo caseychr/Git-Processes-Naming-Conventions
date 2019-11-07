@@ -49,13 +49,13 @@ For efficient code review please abide by the following merge request convention
     - [ ] Ensure other teams (iOS, Tools, DI Labs, BMA) are in sync  
 ```  
     
-Here is an example:
+####Here is an example:
 
 
-(title)
+(title)  
 AND-14795: Welcome screen shell for mobile cash
 
-(body)
+(body)  
 This adds a new Mobile Cash screen, which for now just shows the text "Welcome". The "Welcome" text is currently just a local english string that will eventually be thrown away once we add the content for this screen in a separate upcoming ticket. MRs will probably not be as small as this in the future, but since we are ramping up in the code we decided to keep the work in jira tickets very small and focused. 
 The logout button will not show until we start actually showing content (with fragments). 
 I also decided to have the MVP architecture MR come through in a separate ticket to keep things focused. 
